@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>psalmie_luxe — Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrap">
+        <div class="logo">psalmie_<span>luxe</span></div>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#featured">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="search-cart">
+          <div class="search">
+            <input id="search-input" placeholder="Search products..." />
+          </div>
+          <a class="cart-link" href="cart.html"
+            >Cart <span class="cart-count">0</span></a
+          >
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="content">
+        <div class="hero-copy">
+          <h1>Elevate Your Everyday</h1>
+          <p>
+            Discover curated pieces that blend modern design with timeless
+            quality. Exclusive drops. Fair prices. Delivered fast.
+          </p>
+          <div class="cta">
+            <a href="#featured" class="btn primary">Shop Featured</a>
+            <a href="#categories" class="btn secondary">Browse Categories</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <img src="asset/pexels-photo-7679720.jpeg" alt="Premium fashion" />
+        </div>
+      </div>
+    </section>
+    <section id="featured" class="section">
+      <h2>Featured Products</h2>
+      <div class="sub">Handpicked bestsellers just for you.</div>
+      <div id="featured-grid" class="grid cols-4"></div>
+    </section>
+    <section id="categories" class="section">
+      <h2>Categories</h2>
+      <div class="sub">Shop by what you love.</div>
+      <div id="category-grid" class="category-grid"></div>
+    </section>
+
+    <footer class="footer" id="contact">
+      <div class="wrap">
+        <div>
+          <div class="brand">psalmie_luxe</div>
+          <div class="small">
+            Your one-stop shop for luxury, style, and unbeatable deals. Shop now
+            and experience the elegance!
+          </div>
+        </div>
+        <div>
+          <div>
+            <a href="#">Instagram</a> • <a href="#">Twitter</a> •
+            <a href="#">Facebook</a>
+          </div>
+          <div class="small">Contact: psalmie-luxe@gmail.com</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

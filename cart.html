@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>psalmie_luxe — Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrap">
+        <div class="logo"><span>psalmie_luxe</span></div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="index.html#featured">Shop</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="search">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search products..."
+          />
+          <a class="cart-link" href="cart.html"
+            >🛒 Cart <span class="cart-count" id="cart-count">0</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="cart-page">
+      <h2>Your Cart</h2>
+      <div id="cartList"></div>
+      <div class="cart-summary">
+        <div class="small">Subtotal: <strong id="subtotal">$0.00</strong></div>
+        <div class="small">Shipping: <strong>$0.00</strong></div>
+        <div class="small">Tax (7%): <strong id="tax">$0.00</strong></div>
+        <div class="order-total">
+          <span>Total</span> <span id="total">$0.00</span>
+        </div>
+        <div
+          style="
+            margin-top: 12px;
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+          "
+        >
+          <a href="index.html#featured" class="btn secondary"
+            >Continue Shopping</a
+          >
+          <a href="checkout.html" class="btn primary">Proceed to Checkout</a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="wrap">
+        <div>
+          <div class="brand">psalmie_luxe</div>
+          <div class="small">
+            Your one-stop shop for luxury, style, and unbeatable deals. Shop now
+            and experience the elegance!
+          </div>
+        </div>
+        <div>
+          <div>
+            <a href="#">Instagram</a> • <a href="#">Twitter</a> •
+            <a href="#">Facebook</a>
+          </div>
+          <div class="small">Contact: psalmie-luxe@gmail.com</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

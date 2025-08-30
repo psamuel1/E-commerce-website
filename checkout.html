@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>psalmie_luxe — Checkout</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrap">
+        <div class="logo"><span>psalmie_luxe</span></div>
+        <nav class="nav">
+          <a href="index.html">Home</a>
+          <a href="index.html#featured">Shop</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="search">
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Search products..."
+          />
+          <a class="cart-link" href="cart.html"
+            >🛒 Cart <span class="cart-count" id="cart-count">0</span></a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main class="checkout-page">
+      <form class="form-card" id="billingForm">
+        <h3>Billing Information</h3>
+        <div class="row-2">
+          <div class="field">
+            <label>First Name</label><input id="billFirst" required />
+          </div>
+          <div class="field">
+            <label>Last Name</label><input id="billLast" required />
+          </div>
+        </div>
+        <div class="field">
+          <label>Email</label><input id="billEmail" type="email" required />
+        </div>
+        <div class="field">
+          <label>Phone</label><input id="billPhone" type="tel" required />
+        </div>
+        <div class="field">
+          <label>Address</label><input id="billAddress" required />
+        </div>
+        <div class="row-2">
+          <div class="field">
+            <label>City</label><input id="billCity" required />
+          </div>
+          <div class="field">
+            <label>Postal Code</label><input id="billZip" required />
+          </div>
+        </div>
+        <h3 style="margin-top: 10px">Shipping Information</h3>
+        <div class="field">
+          <label
+            ><input type="checkbox" id="sameAsBilling" checked /> Shipping same
+            as billing</label
+          >
+        </div>
+        <div id="shippingFields" class="hidden">
+          <div class="field">
+            <label>Address</label><input id="shipAddress" />
+          </div>
+          <div class="row-2">
+            <div class="field"><label>City</label><input id="shipCity" /></div>
+            <div class="field">
+              <label>Postal Code</label><input id="shipZip" />
+            </div>
+          </div>
+        </div>
+        <h3 style="margin-top: 10px">Payment</h3>
+        <div class="row-2">
+          <div class="field">
+            <label>Card Number</label><input id="cardNumber" required />
+          </div>
+          <div class="field">
+            <label>Expiry</label
+            ><input id="cardExpiry" placeholder="MM/YY" required />
+          </div>
+        </div>
+        <div class="row-2">
+          <div class="field">
+            <label>Name on Card</label><input id="cardName" required />
+          </div>
+          <div class="field">
+            <label>CVV</label><input id="cardCVV" required />
+          </div>
+        </div>
+        <button type="submit" class="btn primary">Place Order</button>
+        <div
+          id="orderMsg"
+          class="small"
+          style="margin-top: 10px; color: var(--blue)"
+        ></div>
+      </form>
+      <aside class="order-summary">
+        <h3>Order Summary</h3>
+        <div id="summaryItems"></div>
+        <div class="order-total">
+          <span>Total</span><span id="summaryTotal">$0.00</span>
+        </div>
+      </aside>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="wrap">
+        <div>
+          <div class="brand">psalmie_luxe</div>
+          <div class="small">
+            Your one-stop shop for luxury, style, and unbeatable deals. Shop now
+            and experience the elegance!
+          </div>
+        </div>
+        <div>
+          <div>
+            <a href="#">Instagram</a> • <a href="#">Twitter</a> •
+            <a href="#">Facebook</a>
+          </div>
+          <div class="small">Contact: psalmie-luxe@gmail.com</div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/utils.js"></script>
+    <script src="js/checkout.js"></script>
+  </body>
+</html>
