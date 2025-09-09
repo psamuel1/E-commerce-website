@@ -15,26 +15,28 @@
   <body>
     <header class="header">
       <div class="wrap">
-        <div class="logo"><span>psalmie_luxe</span></div>
+        <div class="logo">psalmie_luxe</div>
         <nav class="nav">
-          <a href="index.html">Home</a>
-          <a href="index.html#featured">Shop</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#featured">Shop</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
         </nav>
-        <div class="search">
-          <input
-            id="search-input"
-            type="text"
-            placeholder="Search products..."
-          />
+        <div class="search-cart">
+          <div class="search">
+            <input id="search-input" placeholder="Search products..." />
+          </div>
           <a class="cart-link" href="cart.html"
-            >🛒 Cart <span class="cart-count" id="cart-count">0</span></a
+            >Cart <span class="cart-count">0</span></a
           >
+          <div class="hamburger" onclick="toggleMenu()">
+            <span></span><span></span><span></span>
+          </div>
         </div>
       </div>
     </header>
-
     <main class="cart-page">
       <h2>Your Cart</h2>
       <div id="cartList"></div>
@@ -46,8 +48,9 @@
           <span>Total</span> <span id="total">$0.00</span>
         </div>
         <div
+          class="dream"
           style="
-            margin-top: 12px;
+            margin-top: 122px;
             display: flex;
             gap: 10px;
             justify-content: flex-end;
